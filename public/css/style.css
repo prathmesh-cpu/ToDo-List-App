@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+html {
+    background-color: #f9f1ff;
+}
+
+.navbar {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #5f33cc;
+    padding: 0 1rem;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.box {
+    width: 28rem;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#heading {
+    background-color: #5f33cc;
+    color: #ffffff;
+    padding: 0.5rem 0;
+}
+
+.item {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.item input[type=text] {
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.item button {
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #5f33cc;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.item button:active {
+    background-color: #471aa0;
+}
+
+.item p {
+    width: 90%;
+    text-align: start;
+}
+
+#checked:checked+p {
+    color: #471aa0;
+    font-weight: 600;
+    text-decoration: 1px line-through #a70d0d;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        justify-content: space-evenly;
+    }
+
+    .mainContainer {
+        padding: 1rem;
+    }
+
+    .box {
+        width: 18rem;
+    }
+
+    #heading h1 {
+        font-size: 1.5rem;
+    }
+}
